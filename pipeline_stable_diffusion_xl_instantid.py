@@ -44,10 +44,10 @@ from ip_adapter.utils import is_torch2_available
 
 if is_torch2_available():
     from ip_adapter.attention_processor import (
-        AttnProcessor2_0 as AttnProcessor,
+        AttnProcessor as AttnProcessor2_0,
     )
     from ip_adapter.attention_processor import (
-        IPAttnProcessor2_0 as IPAttnProcessor,
+        IPAttnProcessor as IPAttnProcessor2_0,
     )
 else:
     from ip_adapter.attention_processor import AttnProcessor, IPAttnProcessor
